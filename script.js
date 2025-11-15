@@ -85,6 +85,48 @@ atelierImages.forEach(element => {
     observer.observe(element);
 });
 
+// Observe collection showcase items
+const showcaseItems = document.querySelectorAll('.collection-showcase-item');
+showcaseItems.forEach(element => {
+    observer.observe(element);
+});
+
+// Observe link cards
+const linkCards = document.querySelectorAll('.link-card');
+linkCards.forEach(element => {
+    observer.observe(element);
+});
+
+// Observe principle cards
+const principleCards = document.querySelectorAll('.principle-card');
+principleCards.forEach(element => {
+    observer.observe(element);
+});
+
+// Observe value items
+const valueItems = document.querySelectorAll('.value-item');
+valueItems.forEach(element => {
+    observer.observe(element);
+});
+
+// Observe ingredient showcase items
+const ingredientShowcaseItems = document.querySelectorAll('.ingredient-showcase-item');
+ingredientShowcaseItems.forEach(element => {
+    observer.observe(element);
+});
+
+// Observe craft items
+const craftItems = document.querySelectorAll('.craft-item');
+craftItems.forEach(element => {
+    observer.observe(element);
+});
+
+// Observe team members
+const teamMembers = document.querySelectorAll('.team-member');
+teamMembers.forEach(element => {
+    observer.observe(element);
+});
+
 // ===================================
 // PARALLAX EFFECT
 // ===================================

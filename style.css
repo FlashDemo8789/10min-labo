@@ -158,9 +158,17 @@ button {
     transition: var(--transition-smooth);
 }
 
+.contact-btn::after {
+    display: none;
+}
+
 .contact-btn:hover {
     background-color: var(--color-gold);
     color: var(--color-black);
+}
+
+.contact-btn:hover::after {
+    display: none;
 }
 
 .menu-toggle {
@@ -287,6 +295,334 @@ button {
     background-color: var(--color-gold);
     color: var(--color-black);
     transform: translateY(-3px);
+}
+
+/* ===================================
+   HOME PAGE SECTIONS
+   =================================== */
+
+/* Brand Introduction */
+.brand-intro {
+    padding: 100px 0;
+    background-color: var(--color-cream);
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    color: var(--color-gold);
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.intro-subtitle {
+    font-family: var(--font-primary);
+    font-size: 36px;
+    color: var(--color-charcoal);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+/* Quick Links Grid */
+.quick-links {
+    padding: 120px 0;
+    background-color: var(--color-charcoal);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.link-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-luxury);
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.link-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.link-card-image {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.link-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-luxury);
+}
+
+.link-card:hover .link-card-image img {
+    transform: scale(1.1);
+}
+
+.link-card-content {
+    background-color: var(--color-charcoal);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.link-number {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link-card-content h3 {
+    font-family: var(--font-primary);
+    font-size: 28px;
+    color: var(--color-cream);
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.link-card-content p {
+    font-size: 14px;
+    color: var(--color-accent);
+    font-weight: 300;
+}
+
+.link-card:hover {
+    transform: translateY(-10px);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    color: var(--color-charcoal);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: var(--color-dark-gray);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* ===================================
+   PAGE LAYOUTS
+   =================================== */
+
+/* Page Header */
+.page-header {
+    padding: 180px 0 100px;
+    background-color: var(--color-charcoal);
+    text-align: center;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-family: var(--font-primary);
+    font-size: 72px;
+    color: var(--color-cream);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.header-description {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-accent);
+    font-weight: 300;
+}
+
+/* Collections Showcase */
+.collections-showcase {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.collection-showcase-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 120px;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.collection-showcase-item.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+.collection-showcase-item.reverse {
+    direction: rtl;
+}
+
+.collection-showcase-item.reverse > * {
+    direction: ltr;
+}
+
+.showcase-image {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.showcase-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-luxury);
+}
+
+.collection-showcase-item:hover .showcase-image img {
+    transform: scale(1.05);
+}
+
+.showcase-content {
+    padding: 40px;
+}
+
+.showcase-number {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.showcase-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    color: var(--color-charcoal);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.showcase-tagline {
+    font-size: 16px;
+    color: var(--color-gold);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.showcase-description {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--color-dark-gray);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.showcase-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(42, 42, 42, 0.1);
+    border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+}
+
+.detail-value {
+    font-size: 16px;
+    color: var(--color-charcoal);
+    font-weight: 400;
+}
+
+.showcase-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Bespoke Section */
+.bespoke-section {
+    padding: 100px 0;
+    background-color: var(--color-dark-gray);
+    text-align: center;
+}
+
+.bespoke-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bespoke-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    color: var(--color-cream);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.bespoke-content p {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-accent);
+    margin-bottom: 40px;
+    font-weight: 300;
 }
 
 /* ===================================
@@ -804,6 +1140,734 @@ button {
 }
 
 /* ===================================
+   PHILOSOPHY PAGE
+   =================================== */
+.philosophy-detail-section {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.philosophy-block {
+    margin-bottom: 80px;
+}
+
+.philosophy-image-large {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.philosophy-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.philosophy-text-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.philosophy-text-content p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 25px;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.principle-card {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: var(--color-white);
+    transition: var(--transition-smooth);
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.principle-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.principle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.principle-icon {
+    font-size: 64px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.principle-card h3 {
+    font-family: var(--font-primary);
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.principle-card p {
+    font-size: 14px;
+    color: var(--color-accent);
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.story-section {
+    padding: 120px 0;
+    background-color: var(--color-dark-gray);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    color: var(--color-cream);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.story-text p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--color-accent);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.story-images {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.story-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgba(212, 175, 55, 0.9);
+    padding: 15px 30px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--color-black);
+}
+
+.values-section {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.value-item h3 {
+    font-family: var(--font-primary);
+    font-size: 32px;
+    color: var(--color-charcoal);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.value-item p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+/* ===================================
+   INGREDIENTS PAGE
+   =================================== */
+.ingredient-hero {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.ingredient-hero-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.ingredient-hero-image {
+    height: 600px;
+    overflow: hidden;
+}
+
+.ingredient-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ingredient-hero-text h2 {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.ingredient-hero-text p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 25px;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+.signature-ingredients {
+    padding: 120px 0;
+    background-color: var(--color-charcoal);
+}
+
+.signature-ingredients .section-title {
+    color: var(--color-cream);
+}
+
+.ingredient-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.ingredient-showcase-item {
+    background-color: rgba(245, 245, 240, 0.05);
+    padding: 50px 40px;
+    transition: var(--transition-smooth);
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.ingredient-showcase-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ingredient-showcase-item:hover {
+    background-color: rgba(245, 245, 240, 0.08);
+    transform: translateY(-10px);
+}
+
+.ingredient-showcase-icon {
+    font-size: 72px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.ingredient-showcase-item h3 {
+    font-family: var(--font-primary);
+    font-size: 32px;
+    color: var(--color-cream);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.ingredient-location {
+    font-size: 12px;
+    color: var(--color-gold);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.ingredient-description {
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--color-accent);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.ingredient-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.benefit-tag {
+    font-size: 11px;
+    padding: 6px 15px;
+    border: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    letter-spacing: 1px;
+}
+
+.ingredient-science {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.science-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.science-text h2 {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.science-text p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 30px;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+.science-list {
+    list-style: none;
+    padding: 0;
+}
+
+.science-list li {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--color-dark-gray);
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 300;
+}
+
+.science-list li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+}
+
+.science-image {
+    height: 500px;
+    overflow: hidden;
+}
+
+.science-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sourcing-section {
+    padding: 100px 0;
+    background-color: var(--color-dark-gray);
+    text-align: center;
+}
+
+.sourcing-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    color: var(--color-cream);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.sourcing-content p {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-accent);
+    max-width: 900px;
+    margin: 0 auto 60px;
+    font-weight: 300;
+}
+
+.sourcing-pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillar h4 {
+    font-family: var(--font-primary);
+    font-size: 24px;
+    color: var(--color-gold);
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.pillar p {
+    font-size: 14px;
+    color: var(--color-accent);
+    font-weight: 300;
+}
+
+/* ===================================
+   ATELIER PAGE
+   =================================== */
+.atelier-hero-section {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.atelier-hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.atelier-hero-image-main {
+    height: 600px;
+    overflow: hidden;
+}
+
+.atelier-hero-image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.atelier-hero-text h2 {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.atelier-hero-text p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 25px;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+.atelier-details {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(42, 42, 42, 0.1);
+}
+
+.craftsmanship-section {
+    padding: 120px 0;
+    background-color: var(--color-charcoal);
+}
+
+.craftsmanship-section .section-title {
+    color: var(--color-cream);
+}
+
+.craftsmanship-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.craft-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.craft-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.craft-item.reverse {
+    direction: rtl;
+}
+
+.craft-item.reverse > * {
+    direction: ltr;
+}
+
+.craft-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+.craft-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.craft-content h3 {
+    font-family: var(--font-primary);
+    font-size: 36px;
+    color: var(--color-cream);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.craft-content p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--color-accent);
+    font-weight: 300;
+}
+
+.process-section {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+    text-align: center;
+}
+
+.process-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.process-intro {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-dark-gray);
+    max-width: 800px;
+    margin: 0 auto 60px;
+    font-weight: 300;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    font-size: 48px;
+    font-family: var(--font-primary);
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.process-step h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--color-charcoal);
+    font-weight: 400;
+}
+
+.process-step p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+.consultation-section {
+    padding: 120px 0;
+    background-color: var(--color-dark-gray);
+}
+
+.consultation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.consultation-text h2 {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    color: var(--color-cream);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.consultation-text p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--color-accent);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.consultation-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.consultation-list li {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--color-accent);
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 300;
+}
+
+.consultation-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+}
+
+.consultation-note {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.consultation-image {
+    height: 500px;
+    overflow: hidden;
+}
+
+.consultation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-section {
+    padding: 120px 0;
+    background-color: var(--color-cream);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.team-member {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.team-member.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: var(--transition-smooth);
+}
+
+.team-member:hover .member-image img {
+    filter: grayscale(0%);
+}
+
+.team-member h3 {
+    font-family: var(--font-primary);
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.member-title {
+    font-size: 14px;
+    color: var(--color-gold);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.member-bio {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--color-dark-gray);
+    font-weight: 300;
+}
+
+.visit-section {
+    padding: 100px 0;
+    background-color: var(--color-charcoal);
+    text-align: center;
+}
+
+.visit-content h2 {
+    font-family: var(--font-primary);
+    font-size: 56px;
+    color: var(--color-cream);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.visit-content > p {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-accent);
+    max-width: 800px;
+    margin: 0 auto 60px;
+    font-weight: 300;
+}
+
+.visit-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.visit-item h4 {
+    font-size: 14px;
+    color: var(--color-gold);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.visit-item p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-cream);
+    font-weight: 300;
+}
+
+/* ===================================
    ANIMATIONS
    =================================== */
 .reveal {
@@ -821,6 +1885,10 @@ button {
    RESPONSIVE DESIGN
    =================================== */
 @media (max-width: 1200px) {
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .collections-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -848,8 +1916,69 @@ button {
         display: flex;
     }
 
+    .page-header {
+        padding: 140px 0 80px;
+    }
+
+    .header-title {
+        font-size: 48px;
+    }
+
     .section-title {
         font-size: 48px;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-title {
+        font-size: 36px;
+    }
+
+    .intro-subtitle {
+        font-size: 28px;
+    }
+
+    .cta-content h2 {
+        font-size: 42px;
+    }
+
+    .collection-showcase-item {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .collection-showcase-item.reverse {
+        direction: ltr;
+    }
+
+    .showcase-content {
+        padding: 20px;
+    }
+
+    .showcase-content h2 {
+        font-size: 42px;
+    }
+
+    .showcase-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .showcase-buttons {
+        flex-direction: column;
+    }
+
+    .showcase-buttons .btn-primary,
+    .showcase-buttons .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bespoke-content h2 {
+        font-size: 42px;
     }
 
     .philosophy-content,
