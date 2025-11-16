@@ -37,6 +37,346 @@ This is a **$2 million ultra-luxury website** for **10min labo**, a Japanese cos
 - **Commits**: Must include Claude Code signature
 - **Branch**: main
 
+### GitHub Repository
+- **Repository**: https://github.com/FlashDemo8789/10min-labo
+- **Owner**: FlashDemo8789
+- **Visibility**: Public
+- **Clone URL**: `https://github.com/FlashDemo8789/10min-labo.git`
+- **Default Branch**: main
+
+---
+
+## GitHub Repository Details
+
+### Repository Information
+
+**Repository URL**: https://github.com/FlashDemo8789/10min-labo
+
+**Description**: Ultra-luxury cosmetics website for 10min labo - Japanese skincare brand with patented 3D Nanotechnology
+
+**Status**: Active, public repository
+
+### Cloning the Repository
+
+```bash
+# Clone via HTTPS
+git clone https://github.com/FlashDemo8789/10min-labo.git
+
+# Navigate to project
+cd 10min-labo
+
+# Install dependencies (none required - vanilla HTML/CSS/JS)
+# Start development server
+python3 -m http.server 8000
+
+# Open browser
+# http://localhost:8000
+```
+
+### Working with the Repository
+
+#### First Time Setup
+```bash
+# Clone the repository
+git clone https://github.com/FlashDemo8789/10min-labo.git
+cd 10min-labo
+
+# Check current branch
+git branch
+
+# Check remote
+git remote -v
+```
+
+#### Daily Workflow
+```bash
+# Pull latest changes
+git pull origin main
+
+# Make your changes...
+
+# Check status
+git status
+
+# Add files
+git add .
+
+# Commit with proper message
+git commit -m "Your descriptive commit message
+
+Detailed explanation of changes
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+
+# Push to GitHub
+git push origin main
+```
+
+#### Branch Strategy
+```bash
+# Create feature branch
+git checkout -b feature/your-feature-name
+
+# Work on feature...
+
+# Commit changes
+git add .
+git commit -m "Add feature description"
+
+# Push feature branch
+git push origin feature/your-feature-name
+
+# Create pull request on GitHub
+# Merge after review
+```
+
+### Collaboration Guidelines
+
+#### Before Making Changes
+1. Always pull latest changes: `git pull origin main`
+2. Create a new branch for features: `git checkout -b feature/name`
+3. Keep commits atomic (one feature/fix per commit)
+4. Write descriptive commit messages
+
+#### Commit Message Format
+```
+[Short description - 50 chars max]
+
+[Detailed explanation of what changed and why]
+
+Changes:
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
+
+#### Code Review Process
+1. Push your branch to GitHub
+2. Create a Pull Request
+3. Request review from team members
+4. Address feedback
+5. Merge when approved
+
+### Using Claude Code Cloud
+
+#### Setup
+1. Go to https://claude.ai/projects
+2. Click "New Project" or "Import from GitHub"
+3. Authenticate with GitHub (if needed)
+4. Select `FlashDemo8789/10min-labo` repository
+5. Start coding with Claude in the cloud
+
+#### Benefits
+- Access from anywhere (no local setup needed)
+- Automatic syncing with GitHub
+- Claude has full context of the project
+- Collaborative editing
+- Version history preserved
+
+#### Workflow in Claude Code Cloud
+1. Make changes in Claude Code Cloud
+2. Changes are automatically committed
+3. Push to GitHub when ready
+4. Pull changes locally if needed
+
+### Repository Maintenance
+
+#### Regular Tasks
+- **Weekly**: Review and merge pull requests
+- **Monthly**: Clean up stale branches
+- **Quarterly**: Update dependencies (if any added)
+- **As needed**: Update documentation
+
+#### Branch Management
+```bash
+# List all branches
+git branch -a
+
+# Delete local branch
+git branch -d feature/old-feature
+
+# Delete remote branch
+git push origin --delete feature/old-feature
+
+# Prune deleted remote branches
+git fetch --prune
+```
+
+#### Keeping Fork Updated (if forked)
+```bash
+# Add upstream remote
+git remote add upstream https://github.com/FlashDemo8789/10min-labo.git
+
+# Fetch upstream changes
+git fetch upstream
+
+# Merge upstream main into your main
+git checkout main
+git merge upstream/main
+
+# Push to your fork
+git push origin main
+```
+
+### Repository Settings
+
+#### Recommended Settings
+- **Branch Protection**: Enable for `main` branch
+  - Require pull request reviews before merging
+  - Require status checks to pass
+  - Require branches to be up to date
+- **Issues**: Enable for bug tracking and feature requests
+- **Projects**: Enable for project management
+- **Wiki**: Enable for extended documentation
+- **Discussions**: Enable for community engagement
+
+#### .gitignore Configuration
+The repository includes a `.gitignore` file to exclude:
+- `.DS_Store` (macOS system files)
+- `node_modules/` (if npm packages added later)
+- `.env` (environment variables)
+- `*.log` (log files)
+- `.vscode/` (editor-specific settings)
+- Backup files and temp files
+
+### Deployment from GitHub
+
+#### GitHub Pages (Simple Static Hosting)
+```bash
+# Enable GitHub Pages in repository settings
+# Settings > Pages > Source: main branch
+
+# Your site will be available at:
+# https://FlashDemo8789.github.io/10min-labo/
+```
+
+#### Vercel (Recommended for Production)
+1. Go to https://vercel.com
+2. Import GitHub repository
+3. Configure build settings (none needed for static site)
+4. Deploy
+5. Custom domain: Configure in Vercel settings
+
+#### Netlify (Alternative)
+1. Go to https://netlify.com
+2. New site from Git
+3. Connect to GitHub
+4. Select repository
+5. Deploy settings: None needed
+6. Deploy
+
+### Continuous Integration (Optional)
+
+#### GitHub Actions Workflow
+Create `.github/workflows/deploy.yml`:
+
+```yaml
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+```
+
+### Repository Backup
+
+#### Local Backup
+```bash
+# Create complete backup including history
+git clone --mirror https://github.com/FlashDemo8789/10min-labo.git backup-10min-labo
+
+# Restore from backup if needed
+cd backup-10min-labo
+git push --mirror https://github.com/FlashDemo8789/10min-labo.git
+```
+
+#### Export Repository
+```bash
+# Create archive of current state
+git archive --format=zip --output=10min-labo-backup-$(date +%Y%m%d).zip main
+```
+
+### Troubleshooting
+
+#### Common Issues
+
+**Issue**: Push rejected (non-fast-forward)
+```bash
+# Solution: Pull and merge first
+git pull origin main
+# Resolve conflicts if any
+git push origin main
+```
+
+**Issue**: Accidentally committed large file
+```bash
+# Remove from last commit
+git rm --cached path/to/large/file
+git commit --amend
+
+# Remove from history (use with caution)
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch path/to/large/file" \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+**Issue**: Need to undo last commit
+```bash
+# Keep changes (soft reset)
+git reset --soft HEAD~1
+
+# Discard changes (hard reset - dangerous!)
+git reset --hard HEAD~1
+```
+
+**Issue**: Authentication failed
+```bash
+# Re-authenticate with GitHub CLI
+gh auth login
+
+# Or use personal access token
+# Settings > Developer settings > Personal access tokens
+# Use token as password when pushing
+```
+
+### Repository Statistics
+
+**Current Stats**:
+- **Commits**: 4+
+- **Branches**: 1 (main)
+- **Contributors**: 1 (FlashDemo8789)
+- **Total Size**: ~7 MB (including hero video)
+- **Languages**: HTML (40%), CSS (35%), JavaScript (25%)
+- **Files**: 15 files
+- **Documentation**: 2 comprehensive guides (agents.md, ENHANCEMENT_PLAN.md)
+
+### Important Links
+
+- **Repository**: https://github.com/FlashDemo8789/10min-labo
+- **Issues**: https://github.com/FlashDemo8789/10min-labo/issues
+- **Pull Requests**: https://github.com/FlashDemo8789/10min-labo/pulls
+- **Commits**: https://github.com/FlashDemo8789/10min-labo/commits/main
+- **Code**: https://github.com/FlashDemo8789/10min-labo/tree/main
+
 ---
 
 ## File Structure
