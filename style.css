@@ -21,8 +21,8 @@
     /* Typography */
     /* Primary: Nicolas Cochin / Cochin-style serif for hero + headings */
     --font-primary: 'Cochin', 'Fraunces', 'Cormorant Garamond', 'Times New Roman', serif;
-    /* Secondary: clean sans for body + UI */
-    --font-secondary: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* Secondary: align all text to Nicolas Cochin-style serif */
+    --font-secondary: 'Cochin', 'Fraunces', 'Cormorant Garamond', 'Times New Roman', serif;
     --letter-tight: -0.02em;
     --letter-normal: 0.02em;
     --letter-wide: 0.18em;
