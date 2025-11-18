@@ -24,7 +24,7 @@
     --font-logo: 'Michroma', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --letter-tight: -0.02em;
     --letter-normal: 0.02em;
-    --letter-wide: 0.18em;
+    --letter-wide: 0.14em;
 
     /* Spacing */
     --section-padding: 120px;
@@ -128,7 +128,7 @@ button {
     align-items: center;
     max-width: 1600px;
     margin: 0 auto;
-    gap: 80px;
+    gap: 60px;
 }
 
 .logo {
@@ -148,7 +148,7 @@ button {
 
 .nav-menu {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     list-style: none;
     align-items: center;
     margin-left: auto;
