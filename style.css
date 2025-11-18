@@ -18,9 +18,10 @@
     --color-white: #ffffff;
     --color-accent: #8b7355;
 
-    /* Typography - Dior-inspired pairing */
-    --font-primary: 'Fraunces', 'Times New Roman', serif;
-    --font-secondary: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* Typography - Richard Mille-inspired pairing */
+    --font-primary: 'Michroma', 'Fraunces', 'Times New Roman', serif;
+    --font-secondary: 'Michroma', 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-logo: 'Michroma', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --letter-tight: -0.02em;
     --letter-normal: 0.02em;
     --letter-wide: 0.18em;
@@ -136,11 +137,11 @@ button {
 }
 
 .logo-text {
-    font-family: var(--font-primary);
-    font-size: 30px;
+    font-family: var(--font-logo);
+    font-size: 24px;
     font-weight: 400;
     color: var(--color-gold);
-    letter-spacing: 0.24em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
 }
 
@@ -214,6 +215,80 @@ button {
     height: 1px;
     background-color: var(--color-gold);
     transition: var(--transition-smooth);
+}
+
+/* ===================================
+   LANGUAGE SWITCHER
+   =================================== */
+.language-switcher {
+    position: relative;
+}
+
+.language-toggle {
+    background: transparent;
+    border: none;
+    color: var(--color-cream);
+    font-size: 11px;
+    letter-spacing: var(--letter-wide);
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
+}
+
+.language-toggle:hover {
+    color: var(--color-gold);
+}
+
+.language-label {
+    font-weight: 500;
+}
+
+.language-arrow {
+    font-size: 8px;
+    transform: translateY(-1px);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    min-width: 140px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(10, 10, 10, 0.96);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    display: none;
+}
+
+.language-switcher.open .language-dropdown {
+    display: block;
+}
+
+.language-option {
+    background: transparent;
+    border: none;
+    color: var(--color-cream);
+    font-size: 11px;
+    letter-spacing: var(--letter-wide);
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 4px 0;
+}
+
+.language-option.active {
+    color: var(--color-gold);
+}
+
+html[data-lang="en"] .lang-ja {
+    display: none !important;
+}
+
+html[data-lang="ja"] .lang-en {
+    display: none !important;
 }
 
 /* ===================================

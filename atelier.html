@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&family=Michroma&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -19,12 +19,22 @@
                     </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="philosophy.html" class="nav-link">Philosophy</a></li>
-                <li><a href="collections.html" class="nav-link">Collections</a></li>
-                <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
-                <li><a href="atelier.html" class="nav-link">Atelier</a></li>
-                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+                <li><a href="index.html" class="nav-link"><span class="lang-en">Home</span><span class="lang-ja">ホーム</span></a></li>
+                <li><a href="philosophy.html" class="nav-link"><span class="lang-en">Philosophy</span><span class="lang-ja">フィロソフィー</span></a></li>
+                <li><a href="collections.html" class="nav-link"><span class="lang-en">Collections</span><span class="lang-ja">コレクション</span></a></li>
+                <li><a href="ingredients.html" class="nav-link"><span class="lang-en">Ingredients</span><span class="lang-ja">成分</span></a></li>
+                <li><a href="atelier.html" class="nav-link"><span class="lang-en">Atelier</span><span class="lang-ja">アトリエ</span></a></li>
+                <li><a href="contact.html" class="nav-link contact-btn"><span class="lang-en">Contact</span><span class="lang-ja">お問い合わせ</span></a></li>
+                <li class="language-switcher">
+                    <button type="button" class="language-toggle">
+                        <span class="language-label">English</span>
+                        <span class="language-arrow">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" class="language-option" data-lang="en">English</button>
+                        <button type="button" class="language-option" data-lang="ja">日本語</button>
+                    </div>
+                </li>
             </ul>
             <div class="menu-toggle">
                 <span></span>
@@ -38,12 +48,24 @@
     <section class="page-header">
         <div class="container">
             <div class="header-content reveal">
-                <span class="header-subtitle">Our Research & Development</span>
-                <h1 class="header-title">Advanced Technology Development</h1>
-                <p class="header-description">
+                <span class="header-subtitle">
+                    <span class="lang-en">Our Research & Development</span>
+                    <span class="lang-ja">リサーチ＆開発</span>
+                </span>
+                <h1 class="header-title">
+                    <span class="lang-en">Advanced Technology Development</span>
+                    <span class="lang-ja">先進テクノロジー開発</span>
+                </h1>
+                <p class="header-description lang-en">
                     Our Ginza facility is a living laboratory where regenerative medicine and cosmetic science
                     converge. Partnerships with Pro Labo Holdings and leading biotech teams allow us to craft the
                     world's first exosome-powered, baby-safe cream featuring TDDS and 3D Nanotechnology®.
+                </p>
+                <p class="header-description lang-ja">
+                    銀座のアトリエは、再生医療と化粧品サイエンスが息づく「生きたラボラトリー」です。
+                    Pro Labo Holdingsや先端バイオテクノロジーチームとのパートナーシップにより、
+                    エクソソームを採用しながらもベビーセーフを叶える世界初のクリーム——
+                    TDDSと3Dナノテクノロジー®を搭載した処方——が生まれました。
                 </p>
             </div>
         </div>
@@ -57,28 +79,49 @@
                     <img src="https://images.unsplash.com/photo-1556227834-09f1de7a7d14?w=1200&q=95" alt="Tokyo Atelier">
                 </div>
                 <div class="atelier-hero-text">
-                    <h2>Tokyo Research Facility</h2>
-                    <p>
+                    <h2>
+                        <span class="lang-en">Tokyo Research Facility</span>
+                        <span class="lang-ja">東京リサーチ拠点</span>
+                    </h2>
+                    <p class="lang-en">
                         Beyond its tranquil facade, our Ginza atelier houses research labs dedicated to bridging
                         regenerative medicine and everyday skincare. Here we perfected the combination of
                         high-concentration human stem cell-derived exosomes with cell-penetrating water from Pro Labo
                         Holdings.
                     </p>
-                    <p>
+                    <p class="lang-en">
                         The team focuses on exosome extraction, TDDS development, and surfactant-free formulation
                         research—always ensuring the final texture stays gentle enough for every family member.
                     </p>
+                    <p class="lang-ja">
+                        穏やかな表情の奥に広がるのは、再生医療と日々のスキンケアをつなぐための研究ラボ。
+                        ここで私たちは、高濃度ヒト幹細胞由来エクソソームと、Pro Labo Holdingsによる浸透性ウォーターの
+                        最適なバランスを追求しました。
+                    </p>
+                    <p class="lang-ja">
+                        チームはエクソソーム抽出、TDDS開発、そして界面活性剤フリー処方の研究に集中し、
+                        最終的なテクスチャーが家族全員にとってやさしいものであることを何よりも大切にしています。
+                    </p>
                     <div class="atelier-details">
                         <div class="detail-item">
-                            <span class="detail-label">Location</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Location</span>
+                                <span class="lang-ja">所在地</span>
+                            </span>
                             <span class="detail-value">6-7-15 Ginza, Chuo-ku, Tokyo</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Established</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Established</span>
+                                <span class="lang-ja">設立</span>
+                            </span>
                             <span class="detail-value">2015</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Master Formulators</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Master Formulators</span>
+                                <span class="lang-ja">マスターフォーミュレーター</span>
+                            </span>
                             <span class="detail-value">3 Artisans</span>
                         </div>
                     </div>
@@ -91,8 +134,14 @@
     <section class="craftsmanship-section">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-number">Our Technology</span>
-                <h2 class="section-title">Core Innovations</h2>
+                <span class="section-number">
+                    <span class="lang-en">Our Technology</span>
+                    <span class="lang-ja">テクノロジー</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">Core Innovations</span>
+                    <span class="lang-ja">コアイノベーション</span>
+                </h2>
             </div>
             <div class="craftsmanship-grid">
                 <div class="craft-item reveal" data-delay="0.1">
@@ -100,11 +149,18 @@
                         <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=95" alt="Hand crafting">
                     </div>
                     <div class="craft-content">
-                        <h3>Exosome Extraction</h3>
-                        <p>
+                        <h3>
+                            <span class="lang-en">Exosome Extraction</span>
+                            <span class="lang-ja">エクソソーム抽出</span>
+                        </h3>
+                        <p class="lang-en">
                             Using advanced filtration and low-temperature techniques, we isolate high-concentration
                             exosomes from human stem cell culture liquid, preserving their regenerative signals for
                             rapid renewal.
+                        </p>
+                        <p class="lang-ja">
+                            先進的なフィルトレーションと低温技術により、ヒト幹細胞培養液から高濃度のエクソソームのみを抽出。
+                            その再生シグナルを損なうことなく肌へ届けられるよう設計しています。
                         </p>
                     </div>
                 </div>
@@ -114,11 +170,18 @@
                         <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=800&q=95" alt="Laboratory precision">
                     </div>
                     <div class="craft-content">
-                        <h3>TDDS Engineering</h3>
-                        <p>
+                        <h3>
+                            <span class="lang-en">TDDS Engineering</span>
+                            <span class="lang-ja">TDDS設計</span>
+                        </h3>
+                        <p class="lang-en">
                             Our researchers design Transdermal Drug Delivery System pathways that work in harmony
                             with Innovative 3D Nanotechnology®, guiding actives deep beneath the stratum corneum
                             without relying on surfactants.
+                        </p>
+                        <p class="lang-ja">
+                            研究者たちは、革新的3Dナノテクノロジー®と連動するTDDS（経皮デリバリーシステム）のルートを設計。
+                            界面活性剤に頼ることなく、有用成分を角質層の奥深くまで導きます。
                         </p>
                     </div>
                 </div>
@@ -128,11 +191,19 @@
                         <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800&q=95" alt="Advanced laboratory collaboration">
                     </div>
                     <div class="craft-content">
-                        <h3>Partnership with Pro Labo Holdings</h3>
-                        <p>
+                        <h3>
+                            <span class="lang-en">Partnership with Pro Labo Holdings</span>
+                            <span class="lang-ja">Pro Labo Holdingsとの協業</span>
+                        </h3>
+                        <p class="lang-en">
                             Collaborating with pioneers of cell-penetrating water allows us to maintain a rich,
                             luxurious texture that remains baby-safe while dramatically improving ingredient
                             bioavailability.
+                        </p>
+                        <p class="lang-ja">
+                            浸透性ウォーターのパイオニアであるPro Labo Holdingsとの協業により、
+                            豊かでラグジュアリーなテクスチャーと、赤ちゃんにも使えるやさしさ、
+                            さらに高い有用成分のバイオアベイラビリティを同時に実現しています。
                         </p>
                     </div>
                 </div>
@@ -144,36 +215,63 @@
     <section class="process-section">
         <div class="container">
             <div class="process-content reveal">
-                <h2>Technology Development Process</h2>
-                <p class="process-intro">
+                <h2>
+                    <span class="lang-en">Technology Development Process</span>
+                    <span class="lang-ja">テクノロジー開発プロセス</span>
+                </h2>
+                <p class="process-intro lang-en">
                     Our cream represents years of research in regenerative medicine, exosome science, and
                     transdermal delivery systems to deliver visible change in just 10 minutes.
+                </p>
+                <p class="process-intro lang-ja">
+                    このクリームには、再生医療、エクソソームサイエンス、経皮デリバリーシステムに関する
+                    長年の研究が凝縮されています。10分という短い時間で目に見える変化を届けるためのプロセスです。
                 </p>
                 <div class="process-steps">
                     <div class="process-step">
                         <span class="step-number">01</span>
-                        <h4>Exosome Research</h4>
-                        <p>Studying human stem cell-derived exosomes and their regenerative signaling for skincare</p>
+                        <h4>
+                            <span class="lang-en">Exosome Research</span>
+                            <span class="lang-ja">エクソソーム研究</span>
+                        </h4>
+                        <p class="lang-en">Studying human stem cell-derived exosomes and their regenerative signaling for skincare</p>
+                        <p class="lang-ja">ヒト幹細胞由来エクソソームと、その再生シグナルをスキンケアへ応用する研究。</p>
                     </div>
                     <div class="process-step">
                         <span class="step-number">02</span>
-                        <h4>Delivery System Design</h4>
-                        <p>Engineering TDDS and 3D Nanotechnology® pathways for efficient absorption</p>
+                        <h4>
+                            <span class="lang-en">Delivery System Design</span>
+                            <span class="lang-ja">デリバリーシステム設計</span>
+                        </h4>
+                        <p class="lang-en">Engineering TDDS and 3D Nanotechnology® pathways for efficient absorption</p>
+                        <p class="lang-ja">TDDSと3Dナノテクノロジー®の経路を設計し、高い浸透効率を目指します。</p>
                     </div>
                     <div class="process-step">
                         <span class="step-number">03</span>
-                        <h4>Surfactant-Free Formulation</h4>
-                        <p>Developing a rich yet lightweight texture using cell-penetrating water</p>
+                        <h4>
+                            <span class="lang-en">Surfactant-Free Formulation</span>
+                            <span class="lang-ja">界面活性剤フリー処方</span>
+                        </h4>
+                        <p class="lang-en">Developing a rich yet lightweight texture using cell-penetrating water</p>
+                        <p class="lang-ja">浸透性ウォーターを用い、リッチなのに軽やかな界面活性剤フリーテクスチャーを開発。</p>
                     </div>
                     <div class="process-step">
                         <span class="step-number">04</span>
-                        <h4>Efficacy Validation</h4>
-                        <p>Confirming the 10-minute promise while maintaining baby-safe comfort</p>
+                        <h4>
+                            <span class="lang-en">Efficacy Validation</span>
+                            <span class="lang-ja">効果検証</span>
+                        </h4>
+                        <p class="lang-en">Confirming the 10-minute promise while maintaining baby-safe comfort</p>
+                        <p class="lang-ja">10分の変化とベビーセーフな心地よさが両立しているかを検証。</p>
                     </div>
                     <div class="process-step">
                         <span class="step-number">05</span>
-                        <h4>Production & Quality Control</h4>
-                        <p>Small-batch production preserves exosome potency and family-safe standards</p>
+                        <h4>
+                            <span class="lang-en">Production & Quality Control</span>
+                            <span class="lang-ja">製造と品質管理</span>
+                        </h4>
+                        <p class="lang-en">Small-batch production preserves exosome potency and family-safe standards</p>
+                        <p class="lang-ja">少量生産でエクソソームの力を守りつつ、家族で使える安全基準を徹底。</p>
                     </div>
                 </div>
             </div>
@@ -185,22 +283,50 @@
         <div class="container">
             <div class="consultation-content">
                 <div class="consultation-text reveal">
-                    <h2>Private Atelier Consultations</h2>
-                    <p>
+                    <h2>
+                        <span class="lang-en">Private Atelier Consultations</span>
+                        <span class="lang-ja">プライベートアトリエコンサルテーション</span>
+                    </h2>
+                    <p class="lang-en">
                         We invite a select few to experience our private consultations at the
                         Tokyo atelier. During your visit, you will:
                     </p>
+                    <p class="lang-ja">
+                        限られたお客様のみをお迎えする、東京アトリエでのプライベートコンサルテーション。
+                        ご来訪時には、次のような体験をご提供します。
+                    </p>
                     <ul class="consultation-list">
-                        <li>Meet with a master formulator to discuss your skincare goals</li>
-                        <li>Receive a comprehensive skin analysis using advanced diagnostics</li>
-                        <li>Tour our laboratory and witness the formulation process</li>
-                        <li>Experience personalized product recommendations</li>
-                        <li>Optional: Commission a bespoke formulation created exclusively for you</li>
+                        <li>
+                            <span class="lang-en">Meet with a master formulator to discuss your skincare goals</span>
+                            <span class="lang-ja">マスターフォーミュレーターと肌悩みや理想について対話</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Receive a comprehensive skin analysis using advanced diagnostics</span>
+                            <span class="lang-ja">先端機器を用いた包括的な肌診断</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Tour our laboratory and witness the formulation process</span>
+                            <span class="lang-ja">ラボツアーと処方づくりのプロセス見学</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Experience personalized product recommendations</span>
+                            <span class="lang-ja">お客様一人ひとりに合わせたプロダクトレコメンド</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Optional: Commission a bespoke formulation created exclusively for you</span>
+                            <span class="lang-ja">ご希望に応じて、あなただけのビスポーク処方のご提案</span>
+                        </li>
                     </ul>
-                    <p class="consultation-note">
+                    <p class="consultation-note lang-en">
                         Consultations are by appointment only and typically last 90 minutes.
                     </p>
-                    <a href="contact.html" class="btn-primary">Book Your Consultation</a>
+                    <p class="consultation-note lang-ja">
+                        コンサルテーションは完全予約制で、所要時間は約90分です。
+                    </p>
+                    <a href="contact.html" class="btn-primary">
+                        <span class="lang-en">Book Your Consultation</span>
+                        <span class="lang-ja">コンサルテーションを予約する</span>
+                    </a>
                 </div>
                 <div class="consultation-image reveal" data-delay="0.3">
                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=95" alt="Private consultation">
@@ -213,8 +339,14 @@
     <section class="team-section">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-number">Our Team</span>
-                <h2 class="section-title">Master Formulators</h2>
+                <span class="section-number">
+                    <span class="lang-en">Our Team</span>
+                    <span class="lang-ja">チーム</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">Master Formulators</span>
+                    <span class="lang-ja">マスターフォーミュレーター</span>
+                </h2>
             </div>
             <div class="team-grid">
                 <div class="team-member reveal" data-delay="0.1">
@@ -222,10 +354,17 @@
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=95" alt="Lead Formulator">
                     </div>
                     <h3>Dr. Yuki Tanaka</h3>
-                    <p class="member-title">Lead Formulator & Founder</p>
-                    <p class="member-bio">
+                    <p class="member-title">
+                        <span class="lang-en">Lead Formulator & Founder</span>
+                        <span class="lang-ja">リードフォーミュレーター／創業者</span>
+                    </p>
+                    <p class="member-bio lang-en">
                         30+ years of experience in cosmetic chemistry, trained under master
                         formulators in Kyoto. Ph.D. in Biochemistry from Tokyo University.
+                    </p>
+                    <p class="member-bio lang-ja">
+                        30年以上にわたる化粧品処方の経験を持ち、京都の名門フォーミュレーターのもとで研鑽を積む。
+                        東京大学にて生化学博士号を取得。
                     </p>
                 </div>
 
@@ -234,10 +373,17 @@
                         <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=95" alt="Senior Formulator">
                     </div>
                     <h3>Mei Nakamura</h3>
-                    <p class="member-title">Senior Formulator</p>
-                    <p class="member-bio">
+                    <p class="member-title">
+                        <span class="lang-en">Senior Formulator</span>
+                        <span class="lang-ja">シニアフォーミュレーター</span>
+                    </p>
+                    <p class="member-bio lang-en">
                         Specialist in botanical extraction with 15 years of experience.
                         Master's degree in Plant Sciences from Kyoto University.
+                    </p>
+                    <p class="member-bio lang-ja">
+                        15年以上にわたり植物エキス抽出に携わるスペシャリスト。
+                        京都大学大学院・植物科学専攻修了。
                     </p>
                 </div>
 
@@ -246,10 +392,17 @@
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=95" alt="Research Director">
                     </div>
                     <h3>Dr. Kenji Sato</h3>
-                    <p class="member-title">Research Director</p>
-                    <p class="member-bio">
+                    <p class="member-title">
+                        <span class="lang-en">Research Director</span>
+                        <span class="lang-ja">リサーチディレクター</span>
+                    </p>
+                    <p class="member-bio lang-en">
                         Biotechnology expert specializing in ingredient stabilization and
                         delivery systems. Ph.D. in Molecular Biology.
+                    </p>
+                    <p class="member-bio lang-ja">
+                        成分安定化とデリバリーシステムを専門とするバイオテクノロジーのエキスパート。
+                        分子生物学の博士号を取得。
                     </p>
                 </div>
             </div>
@@ -260,27 +413,46 @@
     <section class="visit-section">
         <div class="container">
             <div class="visit-content reveal">
-                <h2>Visit Our Atelier</h2>
-                <p>
+                <h2>
+                    <span class="lang-en">Visit Our Atelier</span>
+                    <span class="lang-ja">アトリエにお越しください</span>
+                </h2>
+                <p class="lang-en">
                     Located in the prestigious Ginza district, our atelier welcomes visitors
                     by appointment. Experience the intersection of art, science, and luxury
                     in the heart of Tokyo.
                 </p>
+                <p class="lang-ja">
+                    東京・銀座という特別な場所に佇むアトリエは、完全予約制でお客様をお迎えしています。
+                    アート、サイエンス、ラグジュアリーが交差する空間を、ぜひご体感ください。
+                </p>
                 <div class="visit-info">
                     <div class="visit-item">
-                        <h4>Address</h4>
+                        <h4>
+                            <span class="lang-en">Address</span>
+                            <span class="lang-ja">住所</span>
+                        </h4>
                         <p>6-7-15 Ginza, Chuo-ku<br>Tokyo 104-0061, Japan</p>
                     </div>
                     <div class="visit-item">
-                        <h4>Consultation Hours</h4>
+                        <h4>
+                            <span class="lang-en">Consultation Hours</span>
+                            <span class="lang-ja">コンサルテーション受付時間</span>
+                        </h4>
                         <p>Tuesday - Saturday<br>10:00 AM - 6:00 PM</p>
                     </div>
                     <div class="visit-item">
-                        <h4>Contact</h4>
+                        <h4>
+                            <span class="lang-en">Contact</span>
+                            <span class="lang-ja">お問い合わせ</span>
+                        </h4>
                         <p>+81 3 5555 0010<br>concierge@10minlabo.jp</p>
                     </div>
                 </div>
-                <a href="contact.html" class="btn-primary">Schedule a Visit</a>
+                <a href="contact.html" class="btn-primary">
+                    <span class="lang-en">Schedule a Visit</span>
+                    <span class="lang-ja">アトリエ訪問を予約する</span>
+                </a>
             </div>
         </div>
     </section>
@@ -293,9 +465,18 @@
                     <span class="logo-text">10min labo</span>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Press</a>
+                    <a href="#">
+                        <span class="lang-en">Privacy</span>
+                        <span class="lang-ja">プライバシー</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Terms</span>
+                        <span class="lang-ja">ご利用規約</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Press</span>
+                        <span class="lang-ja">プレス</span>
+                    </a>
                 </div>
                 <div class="footer-social">
                     <a href="#">Instagram</a>
@@ -303,7 +484,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 10min labo. All rights reserved.</p>
+                <p>
+                    <span class="lang-en">&copy; 2024 10min labo. All rights reserved.</span>
+                    <span class="lang-ja">&copy; 2024 10min labo. 無断転載・複製を禁じます。</span>
+                </p>
             </div>
         </div>
     </footer>

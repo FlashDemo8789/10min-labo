@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&family=Michroma&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -19,12 +19,22 @@
                     </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="philosophy.html" class="nav-link">Philosophy</a></li>
-                <li><a href="collections.html" class="nav-link">Collections</a></li>
-                <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
-                <li><a href="atelier.html" class="nav-link">Atelier</a></li>
-                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+                <li><a href="index.html" class="nav-link"><span class="lang-en">Home</span><span class="lang-ja">ホーム</span></a></li>
+                <li><a href="philosophy.html" class="nav-link"><span class="lang-en">Philosophy</span><span class="lang-ja">フィロソフィー</span></a></li>
+                <li><a href="collections.html" class="nav-link"><span class="lang-en">Collections</span><span class="lang-ja">コレクション</span></a></li>
+                <li><a href="ingredients.html" class="nav-link"><span class="lang-en">Ingredients</span><span class="lang-ja">成分</span></a></li>
+                <li><a href="atelier.html" class="nav-link"><span class="lang-en">Atelier</span><span class="lang-ja">アトリエ</span></a></li>
+                <li><a href="contact.html" class="nav-link contact-btn"><span class="lang-en">Contact</span><span class="lang-ja">お問い合わせ</span></a></li>
+                <li class="language-switcher">
+                    <button type="button" class="language-toggle">
+                        <span class="language-label">English</span>
+                        <span class="language-arrow">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" class="language-option" data-lang="en">English</button>
+                        <button type="button" class="language-option" data-lang="ja">日本語</button>
+                    </div>
+                </li>
             </ul>
             <div class="menu-toggle">
                 <span></span>
@@ -38,12 +48,23 @@
     <section class="page-header">
         <div class="container">
             <div class="header-content reveal">
-                <span class="header-subtitle">Our Philosophy</span>
-                <h1 class="header-title">Visible Changes in 10 Minutes</h1>
-                <p class="header-description">
+                <span class="header-subtitle">
+                    <span class="lang-en">Our Philosophy</span>
+                    <span class="lang-ja">フィロソフィー</span>
+                </span>
+                <h1 class="header-title">
+                    <span class="lang-en">Visible Changes in 10 Minutes</span>
+                    <span class="lang-ja">10分で目に見える変化</span>
+                </h1>
+                <p class="header-description lang-en">
                     Our name embodies our promise: witness visible skin transformation in just 10 minutes.
                     By marrying regenerative science with uncompromising safety standards, we continue to
                     prioritize family wellness over profit margins.
+                </p>
+                <p class="header-description lang-ja">
+                    「10min labo」という名前には、わずか10分で目に見える肌変化を届けるという約束が込められています。
+                    再生医療サイエンスと妥協のない安全基準を組み合わせることで、私たちはこれからも、利益より家族の
+                    ウェルネスを優先し続けます。
                 </p>
             </div>
         </div>
@@ -58,17 +79,30 @@
                     <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=1400&q=95" alt="Japanese aesthetic">
                 </div>
                 <div class="philosophy-text-content">
-                    <h2>Regenerative Science Meets Daily Skincare</h2>
-                    <p>
+                    <h2>
+                        <span class="lang-en">Regenerative Science Meets Daily Skincare</span>
+                        <span class="lang-ja">再生医療サイエンスを、日々のスキンケアへ。</span>
+                    </h2>
+                    <p class="lang-en">
                         The name "10min labo" was born from a bold goal: skincare should feel baby-safe yet
                         deliver professional results in minutes, not weeks. That pursuit led us to exosome
                         technology, cell-penetrating water developed with Pro Labo Holdings, and transdermal
                         delivery research that keeps every formula gentle enough for the entire family.
                     </p>
-                    <p>
+                    <p class="lang-en">
                         Today we combine high-concentration exosomes with TDDS and patented Innovative 3D
                         Nanotechnology® to achieve rapid transformation while honoring our founding principle of
                         family wellness over profit margins.
+                    </p>
+                    <p class="lang-ja">
+                        「10min labo」は、赤ちゃんに触れても安心でありながら、数週間ではなく「数分」でプロフェッショナルな
+                        実感を得られるスキンケアをつくりたい、という挑戦から生まれました。その探求は、エクソソーム技術や
+                        Pro Labo Holdingsと共に開発した浸透性の高い水、そして家族全員が使えるやさしさを保つための経皮
+                        デリバリー研究へとつながっています。
+                    </p>
+                    <p class="lang-ja">
+                        現在は、高濃度エクソソームにTDDSと特許取得の革新的3Dナノテクノロジー®を組み合わせることで、
+                        家族のウェルネスを利益より優先するという創業時の理念を守りながら、素早い変化を叶えています。
                     </p>
                 </div>
             </div>
@@ -77,23 +111,39 @@
             <div class="principles-grid">
                 <div class="principle-card reveal" data-delay="0.1">
                     <span class="principle-icon">01</span>
-                    <h3>10-Minute Promise</h3>
-                    <p>Visible results in just 10 minutes—our benchmark for every innovation.</p>
+                    <h3>
+                        <span class="lang-en">10-Minute Promise</span>
+                        <span class="lang-ja">10分の約束</span>
+                    </h3>
+                    <p class="lang-en">Visible results in just 10 minutes—our benchmark for every innovation.</p>
+                    <p class="lang-ja">わずか10分で目に見える変化。それが、すべての開発の基準です。</p>
                 </div>
                 <div class="principle-card reveal" data-delay="0.2">
                     <span class="principle-icon">02</span>
-                    <h3>Exosome Technology</h3>
-                    <p>High-concentration human stem cell-derived exosomes deliver regenerative signals to skin cells.</p>
+                    <h3>
+                        <span class="lang-en">Exosome Technology</span>
+                        <span class="lang-ja">エクソソームテクノロジー</span>
+                    </h3>
+                    <p class="lang-en">High-concentration human stem cell-derived exosomes deliver regenerative signals to skin cells.</p>
+                    <p class="lang-ja">高濃度のヒト幹細胞由来エクソソームが、肌細胞へ再生のシグナルを届けます。</p>
                 </div>
                 <div class="principle-card reveal" data-delay="0.3">
                     <span class="principle-icon">03</span>
-                    <h3>TDDS + 3D Nanotech®</h3>
-                    <p>Dual delivery systems guide active ingredients deep below the stratum corneum.</p>
+                    <h3>
+                        <span class="lang-en">TDDS + 3D Nanotech®</span>
+                        <span class="lang-ja">TDDS × 3Dナノテクノロジー®</span>
+                    </h3>
+                    <p class="lang-en">Dual delivery systems guide active ingredients deep below the stratum corneum.</p>
+                    <p class="lang-ja">2つのデリバリーシステムが、有用成分を角質層の奥深くまで導きます。</p>
                 </div>
                 <div class="principle-card reveal" data-delay="0.4">
                     <span class="principle-icon">04</span>
-                    <h3>Family Wellness</h3>
-                    <p>Baby-safe materials and extensive testing ensure trust from infants to adults.</p>
+                    <h3>
+                        <span class="lang-en">Family Wellness</span>
+                        <span class="lang-ja">家族のウェルネス</span>
+                    </h3>
+                    <p class="lang-en">Baby-safe materials and extensive testing ensure trust from infants to adults.</p>
+                    <p class="lang-ja">赤ちゃんにも使える成分選定と徹底したテストで、家族全員が安心して使える処方を守ります。</p>
                 </div>
             </div>
         </div>
@@ -104,21 +154,39 @@
         <div class="container">
             <div class="story-content">
                 <div class="story-text reveal">
-                    <span class="section-number">Our Story</span>
-                    <h2>The Science of 10-Minute Transformation</h2>
-                    <p>
+                    <span class="section-number">
+                        <span class="lang-en">Our Story</span>
+                        <span class="lang-ja">ストーリー</span>
+                    </span>
+                    <h2>
+                        <span class="lang-en">The Science of 10-Minute Transformation</span>
+                        <span class="lang-ja">10分の変化を支えるサイエンス</span>
+                    </h2>
+                    <p class="lang-en">
                         Our journey began with a challenge from families who wanted professional results without
                         compromising safety. Years of research in regenerative medicine, exosome extraction, and
                         TDDS technology made that vision real.
                     </p>
-                    <p>
+                    <p class="lang-en">
                         By collaborating with biotechnology institutes and Pro Labo Holdings, we perfected a
                         surfactant-free delivery system where Innovative 3D Nanotechnology® escorts active
                         ingredients deep into the skin through a simple massage ritual.
                     </p>
-                    <p>
+                    <p class="lang-en">
                         The result is proof that efficacy and baby-safe comfort can coexist—an award-winning
                         formulation every member of the family can trust.
+                    </p>
+                    <p class="lang-ja">
+                        「安全性を損なうことなく、プロフェッショナルな結果を。」そんな家族からの声が、私たちの旅の始まりでした。
+                        再生医療、エクソソーム抽出、TDDSテクノロジーに関する長年の研究が、そのビジョンを現実のものにしました。
+                    </p>
+                    <p class="lang-ja">
+                        バイオテクノロジー研究機関やPro Labo Holdingsとの協業により、界面活性剤に頼らずに有用成分を届ける
+                        デリバリーシステムを完成させ、革新的3Dナノテクノロジー®がシンプルなマッサージ習慣の中で成分を肌の奥へと
+                        エスコートします。
+                    </p>
+                    <p class="lang-ja">
+                        効能と赤ちゃんにも心地よい安心感。その両立を証明する処方こそが、家族の誰もが信頼できる受賞クリームです。
                     </p>
                 </div>
                 <div class="story-images reveal" data-delay="0.3">
@@ -133,28 +201,47 @@
     <section class="values-section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Our Values</h2>
+                <h2 class="section-title">
+                    <span class="lang-en">Our Values</span>
+                    <span class="lang-ja">大切にしている価値観</span>
+                </h2>
             </div>
             <div class="values-grid">
                 <div class="value-item reveal" data-delay="0.1">
-                    <h3>High-Concentration Exosomes</h3>
-                    <p>We extract potent exosomes from human stem cell culture liquid to communicate regenerative
+                    <h3>
+                        <span class="lang-en">High-Concentration Exosomes</span>
+                        <span class="lang-ja">高濃度エクソソーム</span>
+                    </h3>
+                    <p class="lang-en">We extract potent exosomes from human stem cell culture liquid to communicate regenerative
                     signals directly to skin cells for rapid renewal.</p>
+                    <p class="lang-ja">ヒト幹細胞培養液から高濃度のエクソソームを抽出し、肌細胞へダイレクトに働きかける再生シグナルを届けます。</p>
                 </div>
                 <div class="value-item reveal" data-delay="0.2">
-                    <h3>Advanced Delivery Technology</h3>
-                    <p>TDDS and Innovative 3D Nanotechnology® guide active ingredients through the stratum corneum
+                    <h3>
+                        <span class="lang-en">Advanced Delivery Technology</span>
+                        <span class="lang-ja">先進のデリバリー技術</span>
+                    </h3>
+                    <p class="lang-en">TDDS and Innovative 3D Nanotechnology® guide active ingredients through the stratum corneum
                     with precision, ensuring the 10-minute promise is met.</p>
+                    <p class="lang-ja">TDDSと革新的3Dナノテクノロジー®が、有用成分を角質層のすみずみまで正確に届け、10分の約束を支えます。</p>
                 </div>
                 <div class="value-item reveal" data-delay="0.3">
-                    <h3>Surfactant-Free & Baby-Safe</h3>
-                    <p>Our cell-penetrating water keeps the formulation gentle enough for infants while delivering
+                    <h3>
+                        <span class="lang-en">Surfactant-Free & Baby-Safe</span>
+                        <span class="lang-ja">界面活性剤フリー＆ベビーセーフ</span>
+                    </h3>
+                    <p class="lang-en">Our cell-penetrating water keeps the formulation gentle enough for infants while delivering
                     clinical-grade efficacy for adults.</p>
+                    <p class="lang-ja">浸透性の高い水処方により、赤ちゃんにもやさしい使用感と、大人の肌にふさわしいプロフェッショナルな実感を両立します。</p>
                 </div>
                 <div class="value-item reveal" data-delay="0.4">
-                    <h3>Rich Yet Lightweight</h3>
-                    <p>A luxurious texture that absorbs quickly without stickiness, supporting consistent family use
+                    <h3>
+                        <span class="lang-en">Rich Yet Lightweight</span>
+                        <span class="lang-ja">濃密なのに、軽やか</span>
+                    </h3>
+                    <p class="lang-en">A luxurious texture that absorbs quickly without stickiness, supporting consistent family use
                     from face to body.</p>
+                    <p class="lang-ja">リッチでコクがありながらべたつかず、顔からボディまで家族全員が毎日続けられるテクスチャーです。</p>
                 </div>
             </div>
         </div>
@@ -164,10 +251,17 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content reveal">
-                <h2>Experience 10-Minute Transformation</h2>
-                <p>Bring regenerative medicine into your daily ritual—exosome technology, TDDS delivery, and
+                <h2>
+                    <span class="lang-en">Experience 10-Minute Transformation</span>
+                    <span class="lang-ja">10分の変化を体験する</span>
+                </h2>
+                <p class="lang-en">Bring regenerative medicine into your daily ritual—exosome technology, TDDS delivery, and
                 baby-safe comfort working together for the entire family.</p>
-                <a href="collections.html" class="btn-primary">Try 10min Labo Cream</a>
+                <p class="lang-ja">再生医療の知見を、毎日のルーティンへ。エクソソーム、TDDS、そして家族全員にやさしい心地よさが、10分の変化を支えます。</p>
+                <a href="collections.html" class="btn-primary">
+                    <span class="lang-en">Try 10min Labo Cream</span>
+                    <span class="lang-ja">10min Labo クリームを見る</span>
+                </a>
             </div>
         </div>
     </section>
@@ -180,9 +274,18 @@
                     <span class="logo-text">10min labo</span>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Press</a>
+                    <a href="#">
+                        <span class="lang-en">Privacy</span>
+                        <span class="lang-ja">プライバシー</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Terms</span>
+                        <span class="lang-ja">ご利用規約</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Press</span>
+                        <span class="lang-ja">プレス</span>
+                    </a>
                 </div>
                 <div class="footer-social">
                     <a href="#">Instagram</a>
@@ -190,7 +293,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 10min labo. All rights reserved.</p>
+                <p>
+                    <span class="lang-en">&copy; 2024 10min labo. All rights reserved.</span>
+                    <span class="lang-ja">&copy; 2024 10min labo. 無断転載・複製を禁じます。</span>
+                </p>
             </div>
         </div>
     </footer>

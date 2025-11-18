@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&family=Michroma&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -17,12 +17,22 @@
                 <span class="logo-text">10min labo</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="philosophy.html" class="nav-link">Philosophy</a></li>
-                <li><a href="collections.html" class="nav-link">Collections</a></li>
-                <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
-                <li><a href="atelier.html" class="nav-link">Atelier</a></li>
-                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+                <li><a href="index.html" class="nav-link"><span class="lang-en">Home</span><span class="lang-ja">ホーム</span></a></li>
+                <li><a href="philosophy.html" class="nav-link"><span class="lang-en">Philosophy</span><span class="lang-ja">フィロソフィー</span></a></li>
+                <li><a href="collections.html" class="nav-link"><span class="lang-en">Collections</span><span class="lang-ja">コレクション</span></a></li>
+                <li><a href="ingredients.html" class="nav-link"><span class="lang-en">Ingredients</span><span class="lang-ja">成分</span></a></li>
+                <li><a href="atelier.html" class="nav-link"><span class="lang-en">Atelier</span><span class="lang-ja">アトリエ</span></a></li>
+                <li><a href="contact.html" class="nav-link contact-btn"><span class="lang-en">Contact</span><span class="lang-ja">お問い合わせ</span></a></li>
+                <li class="language-switcher">
+                    <button type="button" class="language-toggle">
+                        <span class="language-label">English</span>
+                        <span class="language-arrow">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" class="language-option" data-lang="en">English</button>
+                        <button type="button" class="language-option" data-lang="ja">日本語</button>
+                    </div>
+                </li>
             </ul>
             <div class="menu-toggle">
                 <span></span>
@@ -40,9 +50,9 @@
             </video>
             <div class="video-overlay"></div>
         </div>
-        <!-- Minimal hero content - video has its own text -->
         <div class="scroll-indicator">
-            <span class="scroll-text">Scroll to discover</span>
+            <span class="scroll-text lang-en">Scroll to discover</span>
+            <span class="scroll-text lang-ja">スクロールしてご覧ください</span>
             <div class="scroll-line"></div>
         </div>
     </section>
@@ -51,14 +61,26 @@
     <section class="brand-intro">
         <div class="container">
             <div class="intro-content reveal">
-                <h2 class="intro-title">Family Beauty, Refined</h2>
-                <h3 class="intro-subtitle">Visible Changes in 10 Minutes</h3>
-                <p class="intro-text">
+                <h2 class="intro-title">
+                    <span class="lang-en">Family Beauty, Refined</span>
+                    <span class="lang-ja">家族の美しさを、上質に。</span>
+                </h2>
+                <h3 class="intro-subtitle">
+                    <span class="lang-en">Visible Changes in 10 Minutes</span>
+                    <span class="lang-ja">わずか10分で、目に見える変化。</span>
+                </h3>
+                <p class="intro-text lang-en">
                     Experience the breakthrough of Japanese regenerative science. Our award-winning cream
                     pairs human stem cell-derived exosomes with patented Innovative 3D Nanotechnology® and
                     TDDS (Transdermal Drug Delivery System) to deliver clinical-grade penetration while
                     remaining baby-safe. Every jar is created through extensive research that prioritizes
                     family wellness over profit margins.
+                </p>
+                <p class="intro-text lang-ja">
+                    日本発の再生医療サイエンスから生まれたブレイクスルーを、10分のホームケアに。受賞歴を持つクリームには、
+                    ヒト幹細胞培養液由来のエクソソームと特許取得の革新的3Dナノテクノロジー®、そして経皮デリバリーシステム
+                    （TDDS）を融合し、プロフェッショナルレベルの浸透力を叶えながら、赤ちゃんにも使えるやさしさを保たせました。
+                    一つひとつのジャーは、利益よりも家族の健康と安心を優先する研究から生まれています。
                 </p>
             </div>
         </div>
@@ -74,8 +96,12 @@
                     </div>
                     <div class="link-card-content">
                         <span class="link-number">01</span>
-                        <h3>Collections</h3>
-                        <p>Exosome-powered cream crafted for baby-safe 10-minute results</p>
+                        <h3>
+                            <span class="lang-en">Collections</span>
+                            <span class="lang-ja">コレクション</span>
+                        </h3>
+                        <p class="lang-en">Exosome-powered cream crafted for baby-safe 10-minute results</p>
+                        <p class="lang-ja">エクソソーム配合のクリームで、赤ちゃんにも使える10分ケアを。</p>
                     </div>
                 </a>
 
@@ -85,8 +111,12 @@
                     </div>
                     <div class="link-card-content">
                         <span class="link-number">02</span>
-                        <h3>Philosophy</h3>
-                        <p>Family wellness philosophy rooted in regenerative science</p>
+                        <h3>
+                            <span class="lang-en">Philosophy</span>
+                            <span class="lang-ja">フィロソフィー</span>
+                        </h3>
+                        <p class="lang-en">Family wellness philosophy rooted in regenerative science</p>
+                        <p class="lang-ja">再生医療サイエンスに根ざした、家族のウェルネス哲学。</p>
                     </div>
                 </a>
 
@@ -96,8 +126,12 @@
                     </div>
                     <div class="link-card-content">
                         <span class="link-number">03</span>
-                        <h3>Ingredients</h3>
-                        <p>Exosomes, cell-penetrating water, and patented delivery tech</p>
+                        <h3>
+                            <span class="lang-en">Ingredients</span>
+                            <span class="lang-ja">成分</span>
+                        </h3>
+                        <p class="lang-en">Exosomes, cell-penetrating water, and patented delivery tech</p>
+                        <p class="lang-ja">エクソソーム、浸透性の高い水、特許取得のデリバリー技術。</p>
                     </div>
                 </a>
 
@@ -107,8 +141,12 @@
                     </div>
                     <div class="link-card-content">
                         <span class="link-number">04</span>
-                        <h3>Tokyo Atelier</h3>
-                        <p>Tokyo atelier pioneering TDDS + 3D Nanotechnology®</p>
+                        <h3>
+                            <span class="lang-en">Tokyo Atelier</span>
+                            <span class="lang-ja">東京アトリエ</span>
+                        </h3>
+                        <p class="lang-en">Tokyo atelier pioneering TDDS + 3D Nanotechnology®</p>
+                        <p class="lang-ja">TDDSと3Dナノテクノロジー®を追求する東京アトリエ。</p>
                     </div>
                 </a>
             </div>
@@ -119,10 +157,22 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content reveal">
-                <h2>Experience 10min Labo Cream</h2>
-                <p>Harness exosomes and TDDS technology for skin transformation you can see in just 10 minutes—
-                a rich yet lightweight, surfactant-free texture that stays gentle and baby-safe for the entire family.</p>
-                <a href="contact.html" class="btn-primary">Discover 10-Minute Results</a>
+                <h2>
+                    <span class="lang-en">Experience 10min Labo Cream</span>
+                    <span class="lang-ja">10min Labo クリームを体験する</span>
+                </h2>
+                <p class="lang-en">
+                    Harness exosomes and TDDS technology for skin transformation you can see in just 10 minutes—
+                    a rich yet lightweight, surfactant-free texture that stays gentle and baby-safe for the entire family.
+                </p>
+                <p class="lang-ja">
+                    エクソソームとTDDS技術を掛け合わせ、わずか10分で目に見える肌変化へ。コクがありながらべたつかない、
+                    界面活性剤フリーのテクスチャーは、家族全員の肌にやさしい処方です。
+                </p>
+                <a href="contact.html" class="btn-primary">
+                    <span class="lang-en">Discover 10-Minute Results</span>
+                    <span class="lang-ja">10分の変化を体験する</span>
+                </a>
             </div>
         </div>
     </section>
@@ -136,9 +186,18 @@
                     <span class="logo-text">10min labo</span>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Press</a>
+                    <a href="#">
+                        <span class="lang-en">Privacy</span>
+                        <span class="lang-ja">プライバシー</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Terms</span>
+                        <span class="lang-ja">ご利用規約</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Press</span>
+                        <span class="lang-ja">プレス</span>
+                    </a>
                 </div>
                 <div class="footer-social">
                     <a href="#">Instagram</a>
@@ -146,7 +205,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 10min labo. All rights reserved.</p>
+                <p>
+                    <span class="lang-en">&copy; 2024 10min labo. All rights reserved.</span>
+                    <span class="lang-ja">&copy; 2024 10min labo. 無断転載・複製を禁じます。</span>
+                </p>
             </div>
         </div>
     </footer>

@@ -223,6 +223,80 @@ if (contactForm) {
 }
 
 // ===================================
+// LANGUAGE SWITCHER
+// ===================================
+const LANGUAGE_STORAGE_KEY = '10min-labo-language';
+const supportedLanguages = ['en', 'ja'];
+
+function applyLanguage(lang) {
+    const safeLang = supportedLanguages.includes(lang) ? lang : 'en';
+
+    // Set HTML lang attribute and data attribute for CSS
+    document.documentElement.setAttribute('lang', safeLang === 'ja' ? 'ja' : 'en');
+    document.documentElement.setAttribute('data-lang', safeLang);
+
+    // Persist choice
+    try {
+        localStorage.setItem(LANGUAGE_STORAGE_KEY, safeLang);
+    } catch (e) {
+        // Ignore storage errors (private mode, etc.)
+    }
+
+    // Update language label and active state in dropdown
+    const languageLabel = document.querySelector('.language-label');
+    const languageOptions = document.querySelectorAll('.language-option');
+
+    if (languageLabel) {
+        languageLabel.textContent = safeLang === 'ja' ? '日本語' : 'English';
+    }
+
+    languageOptions.forEach(option => {
+        const optionLang = option.getAttribute('data-lang');
+        option.classList.toggle('active', optionLang === safeLang);
+    });
+}
+
+// Initialize language from storage or default
+let initialLanguage = 'en';
+try {
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored && supportedLanguages.includes(stored)) {
+        initialLanguage = stored;
+    }
+} catch (e) {
+    // Ignore storage issues
+}
+applyLanguage(initialLanguage);
+
+// Wire up dropdown interactions
+const languageSwitcher = document.querySelector('.language-switcher');
+const languageToggleButton = document.querySelector('.language-toggle');
+const languageOptionButtons = document.querySelectorAll('.language-option');
+
+if (languageSwitcher && languageToggleButton) {
+    languageToggleButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        languageSwitcher.classList.toggle('open');
+    });
+
+    languageOptionButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const selectedLang = button.getAttribute('data-lang');
+            applyLanguage(selectedLang);
+            languageSwitcher.classList.remove('open');
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!languageSwitcher.contains(event.target)) {
+            languageSwitcher.classList.remove('open');
+        }
+    });
+}
+
+// ===================================
 // PAGE TRANSITION EFFECT
 // ===================================
 window.addEventListener('beforeunload', () => {

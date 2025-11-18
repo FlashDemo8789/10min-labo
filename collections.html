@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&family=Michroma&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -19,12 +19,22 @@
                     </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="philosophy.html" class="nav-link">Philosophy</a></li>
-                <li><a href="collections.html" class="nav-link">Collections</a></li>
-                <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
-                <li><a href="atelier.html" class="nav-link">Atelier</a></li>
-                <li><a href="contact.html" class="nav-link contact-btn">Contact</a></li>
+                <li><a href="index.html" class="nav-link"><span class="lang-en">Home</span><span class="lang-ja">ホーム</span></a></li>
+                <li><a href="philosophy.html" class="nav-link"><span class="lang-en">Philosophy</span><span class="lang-ja">フィロソフィー</span></a></li>
+                <li><a href="collections.html" class="nav-link"><span class="lang-en">Collections</span><span class="lang-ja">コレクション</span></a></li>
+                <li><a href="ingredients.html" class="nav-link"><span class="lang-en">Ingredients</span><span class="lang-ja">成分</span></a></li>
+                <li><a href="atelier.html" class="nav-link"><span class="lang-en">Atelier</span><span class="lang-ja">アトリエ</span></a></li>
+                <li><a href="contact.html" class="nav-link contact-btn"><span class="lang-en">Contact</span><span class="lang-ja">お問い合わせ</span></a></li>
+                <li class="language-switcher">
+                    <button type="button" class="language-toggle">
+                        <span class="language-label">English</span>
+                        <span class="language-arrow">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" class="language-option" data-lang="en">English</button>
+                        <button type="button" class="language-option" data-lang="ja">日本語</button>
+                    </div>
+                </li>
             </ul>
             <div class="menu-toggle">
                 <span></span>
@@ -38,13 +48,24 @@
     <section class="page-header">
         <div class="container">
             <div class="header-content reveal">
-                <span class="header-subtitle">Our Signature Product</span>
-                <h1 class="header-title">10min Labo Cream</h1>
-                <p class="header-description">
+                <span class="header-subtitle">
+                    <span class="lang-en">Our Signature Product</span>
+                    <span class="lang-ja">シグネチャープロダクト</span>
+                </span>
+                <h1 class="header-title">
+                    <span class="lang-en">10min Labo Cream</span>
+                    <span class="lang-ja">10min Labo クリーム</span>
+                </h1>
+                <p class="header-description lang-en">
                     Witness visible skin changes in just 10 minutes. Our revolutionary cream combines
                     human stem cell-derived exosomes with patented Innovative 3D Nanotechnology® and
                     TDDS (Transdermal Drug Delivery System) for unprecedented ingredient penetration—
                     all within a baby-safe, surfactant-free base for face and body.
+                </p>
+                <p class="header-description lang-ja">
+                    わずか10分で、目に見える肌変化を。革新的なこのクリームは、ヒト幹細胞由来エクソソームと特許取得の
+                    革新的3Dナノテクノロジー®、そしてTDDS（経皮デリバリーシステム）を掛け合わせ、これまでにない浸透力を実現。
+                    それでいて、顔にもボディにも使える赤ちゃん対応の界面活性剤フリー処方にこだわりました。
                 </p>
             </div>
         </div>
@@ -60,31 +81,57 @@
                 </div>
                 <div class="showcase-content">
                     <span class="showcase-number">01</span>
-                    <h2>10min Labo Cream</h2>
-                    <p class="showcase-tagline">Exosome-Powered Face & Body Cream</p>
-                    <p class="showcase-description">
+                    <h2>
+                        <span class="lang-en">10min Labo Cream</span>
+                        <span class="lang-ja">10min Labo クリーム</span>
+                    </h2>
+                    <p class="showcase-tagline">
+                        <span class="lang-en">Exosome-Powered Face & Body Cream</span>
+                        <span class="lang-ja">エクソソーム配合フェイス＆ボディクリーム</span>
+                    </p>
+                    <p class="showcase-description lang-en">
                         Harness high-concentration human stem cell-derived exosomes delivered through our
                         patented Innovative 3D Nanotechnology®. TDDS ensures deep absorption while the rich-yet-light
                         texture stays baby-safe and suitable for every family member. Massage for 10 minutes to
                         experience visible transformation without greasiness.
                     </p>
+                    <p class="showcase-description lang-ja">
+                        高濃度ヒト幹細胞由来エクソソームを、特許取得の革新的3Dナノテクノロジー®で安定化しながら肌へ届ける
+                        フェイス＆ボディクリームです。TDDSが角質層の奥まで成分を運び、濃密なのに軽やかなテクスチャーが
+                        赤ちゃんにも使えるやさしさをキープ。10分間のマッサージで、べたつきのない目に見える変化を叶えます。
+                    </p>
                     <div class="showcase-details">
                         <div class="detail-item">
-                            <span class="detail-label">Size</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Size</span>
+                                <span class="lang-ja">サイズ</span>
+                            </span>
                             <span class="detail-value">150g / 5g</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Price</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Price</span>
+                                <span class="lang-ja">価格</span>
+                            </span>
                             <span class="detail-value">¥19,800 / ¥680</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Application Time</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Application Time</span>
+                                <span class="lang-ja">ケア時間</span>
+                            </span>
                             <span class="detail-value">10 Minutes</span>
                         </div>
                     </div>
                     <div class="showcase-buttons">
-                        <a href="contact.html" class="btn-primary">Purchase Now</a>
-                        <a href="ingredients.html" class="btn-secondary">Learn More</a>
+                        <a href="contact.html" class="btn-primary">
+                            <span class="lang-en">Purchase Now</span>
+                            <span class="lang-ja">購入・お問い合わせ</span>
+                        </a>
+                        <a href="ingredients.html" class="btn-secondary">
+                            <span class="lang-en">Learn More</span>
+                            <span class="lang-ja">成分を詳しく見る</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -96,31 +143,57 @@
                 </div>
                 <div class="showcase-content">
                     <span class="showcase-number">02</span>
-                    <h2>TDDS + 3D Nanotechnology®</h2>
-                    <p class="showcase-tagline">Advanced Transdermal Delivery System</p>
-                    <p class="showcase-description">
+                    <h2>
+                        <span class="lang-en">TDDS + 3D Nanotechnology®</span>
+                        <span class="lang-ja">TDDS × 3Dナノテクノロジー®</span>
+                    </h2>
+                    <p class="showcase-tagline">
+                        <span class="lang-en">Advanced Transdermal Delivery System</span>
+                        <span class="lang-ja">先進の経皮デリバリーシステム</span>
+                    </p>
+                    <p class="showcase-description lang-en">
                         Our dual-delivery system unites TDDS (Transdermal Drug Delivery System) with patented
                         Innovative 3D Nanotechnology®. Together they penetrate the stratum corneum, stabilize
                         exosomes, and guide active ingredients directly to skin cells for rapid rejuvenation and
                         award-winning results through a simple 10-minute massage ritual.
                     </p>
+                    <p class="showcase-description lang-ja">
+                        TDDS（経皮デリバリーシステム）と特許取得の革新的3Dナノテクノロジー®を組み合わせた独自の
+                        デュアルデリバリー設計。角質層を越えてエクソソームを安定的に運び、有用成分を肌細胞へダイレクトに
+                        届けることで、10分のマッサージ習慣から受賞歴を持つ結果を生み出します。
+                    </p>
                     <div class="showcase-details">
                         <div class="detail-item">
-                            <span class="detail-label">Technology</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Technology</span>
+                                <span class="lang-ja">テクノロジー</span>
+                            </span>
                             <span class="detail-value">Patented</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Award</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Award</span>
+                                <span class="lang-ja">受賞歴</span>
+                            </span>
                             <span class="detail-value">Gold Winner</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Application</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Application</span>
+                                <span class="lang-ja">使用方法</span>
+                            </span>
                             <span class="detail-value">Massage Method</span>
                         </div>
                     </div>
                     <div class="showcase-buttons">
-                        <a href="atelier.html" class="btn-primary">Our Technology</a>
-                        <a href="contact.html" class="btn-secondary">Contact Us</a>
+                        <a href="atelier.html" class="btn-primary">
+                            <span class="lang-en">Our Technology</span>
+                            <span class="lang-ja">技術について</span>
+                        </a>
+                        <a href="contact.html" class="btn-secondary">
+                            <span class="lang-en">Contact Us</span>
+                            <span class="lang-ja">お問い合わせ</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -132,31 +205,57 @@
                 </div>
                 <div class="showcase-content">
                     <span class="showcase-number">03</span>
-                    <h2>Surfactant-Free Innovation</h2>
-                    <p class="showcase-tagline">Pure, Advanced Formulation</p>
-                    <p class="showcase-description">
+                    <h2>
+                        <span class="lang-en">Surfactant-Free Innovation</span>
+                        <span class="lang-ja">界面活性剤フリーの革新</span>
+                    </h2>
+                    <p class="showcase-tagline">
+                        <span class="lang-en">Pure, Advanced Formulation</span>
+                        <span class="lang-ja">ピュアで先進的な処方</span>
+                    </p>
+                    <p class="showcase-description lang-en">
                         Achieve deep penetration without harsh surfactants. Our cell-penetrating water and TDDS
                         technology guide exosomes and beauty ingredients beneath the skin while keeping the
                         formulation gentle, baby-safe, and suitable for sensitive complexions. Specialized body-care
                         actives ensure the whole family enjoys comprehensive results.
                     </p>
+                    <p class="showcase-description lang-ja">
+                        強い界面活性剤に頼ることなく、深い浸透感を実現。浸透性の高い水とTDDSテクノロジーがエクソソームや
+                        美容成分を肌の奥へと導きながら、処方そのものは赤ちゃんや敏感肌にもやさしい設計に。
+                        ボディケア成分も厳選し、家族全員がトータルな結果を楽しめます。
+                    </p>
                     <div class="showcase-details">
                         <div class="detail-item">
-                            <span class="detail-label">Safety</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Safety</span>
+                                <span class="lang-ja">安全性</span>
+                            </span>
                             <span class="detail-value">Baby-Safe</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Usage</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Usage</span>
+                                <span class="lang-ja">対象</span>
+                            </span>
                             <span class="detail-value">All Ages</span>
                         </div>
                         <div class="detail-item">
-                            <span class="detail-label">Application</span>
+                            <span class="detail-label">
+                                <span class="lang-en">Application</span>
+                                <span class="lang-ja">使用部位</span>
+                            </span>
                             <span class="detail-value">Face & Body</span>
                         </div>
                     </div>
                     <div class="showcase-buttons">
-                        <a href="philosophy.html" class="btn-primary">Our Philosophy</a>
-                        <a href="contact.html" class="btn-secondary">Get Started</a>
+                        <a href="philosophy.html" class="btn-primary">
+                            <span class="lang-en">Our Philosophy</span>
+                            <span class="lang-ja">フィロソフィーを見る</span>
+                        </a>
+                        <a href="contact.html" class="btn-secondary">
+                            <span class="lang-en">Get Started</span>
+                            <span class="lang-ja">初めての方へ</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -167,14 +266,25 @@
     <section class="bespoke-section">
         <div class="container">
             <div class="bespoke-content reveal">
-                <h2>Regenerative Science Innovation</h2>
-                <p>
+                <h2>
+                    <span class="lang-en">Regenerative Science Innovation</span>
+                    <span class="lang-ja">再生医療サイエンスのイノベーション</span>
+                </h2>
+                <p class="lang-en">
                     10min Labo Cream represents the convergence of regenerative medicine and cosmetic science.
                     Our high-concentration exosome formulation, delivered through TDDS and 3D Nanotechnology®, brings
                     clinical-grade ingredients to daily routines while staying true to our promise of family wellness
                     over profit margins.
                 </p>
-                <a href="contact.html" class="btn-primary">Experience 10-Minute Results</a>
+                <p class="lang-ja">
+                    10min Labo クリームは、再生医療と化粧品サイエンスが出会う場所から生まれました。
+                    高濃度エクソソーム処方をTDDSと3Dナノテクノロジー®で届けることで、プロフェッショナルグレードの成分を
+                    日々のルーティンへ。家族のウェルネスを利益より優先するという約束を守りながら、結果を追求します。
+                </p>
+                <a href="contact.html" class="btn-primary">
+                    <span class="lang-en">Experience 10-Minute Results</span>
+                    <span class="lang-ja">10分の変化を体験する</span>
+                </a>
             </div>
         </div>
     </section>
@@ -187,9 +297,18 @@
                     <span class="logo-text">10min labo</span>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Press</a>
+                    <a href="#">
+                        <span class="lang-en">Privacy</span>
+                        <span class="lang-ja">プライバシー</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Terms</span>
+                        <span class="lang-ja">ご利用規約</span>
+                    </a>
+                    <a href="#">
+                        <span class="lang-en">Press</span>
+                        <span class="lang-ja">プレス</span>
+                    </a>
                 </div>
                 <div class="footer-social">
                     <a href="#">Instagram</a>
@@ -197,7 +316,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 10min labo. All rights reserved.</p>
+                <p>
+                    <span class="lang-en">&copy; 2024 10min labo. All rights reserved.</span>
+                    <span class="lang-ja">&copy; 2024 10min labo. 無断転載・複製を禁じます。</span>
+                </p>
             </div>
         </div>
     </footer>
